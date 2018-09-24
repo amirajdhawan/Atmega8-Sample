@@ -1,4 +1,0 @@
-avr-gcc -mmcu=attiny2313 -Wall blink.c -o blink.o
-avr-objcopy -j.text blink.o blink.hex
-sudo avrdude -c usbasp -p attiny2313 -U flash:w:blink.hex
-
